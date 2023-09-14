@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copia do YouTube</title>
+    
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Youtube style.css">
+    
+</head>
+
+<body>
+    
+    <!-- ===================== Header ===================== -->
+    <header>
+        <div class="header">
+            <!-- ESQUERDA -->
+            <div class="header-esquerda">
+                <button class="header-buttons header-3barras" onclick="showBigNav()">
+                    <img src="YOUTUBE IMAGES/menu.svg" alt="" class="header-3barras-img">
+                </button>
+                <div class="header-logo">
+                    <a href="">
+                        <img src="YOUTUBE IMAGES/yt-logo.svg" alt="" class="header-logo-img" title="Youtube Home">
+                        <h6>BR</h6>
+                    </a>    
+                </div>
+            </div>
+            <!-- MEIO -->
+            <div class="header-meio">
+                <div class="header-search">
+                    <div class="header-search-esq header-search-esq-HIDE" id="searchbarID">
+                        <img src="YOUTUBE IMAGES/magnifying-glass.svg" alt=""
+                        class="header-search-img header-search-img-HIDE" id="magnifyingID">
+                        <input type="text" id="searchtxfID" class="header-search-txf header-search-txf-HIDE"
+                        name="video search" placeholder="Search" onclick="showMagnifying(true)"
+                        onblur="showMagnifying(false)">
+                        
+                        <ul class="header-search-list header-HIDE" id="searchHistoryID">
+                            <li class="header-search-recents">
+                                <img src="YOUTUBE IMAGES/recents.svg" alt="">
+                                <div>
+                                    <p> Somethin somethin idk </p>
+                                    <a href="  "> Remove </a>
+                                </div>
+                            </li>
+                            <li class="header-search-recents">
+                                <img src="YOUTUBE IMAGES/recents.svg" alt="">
+                                <div>
+                                    <p> Another somethin really really long, for test purposes</p>
+                                    <a href="  "> Remove </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="header-search-dir">
+                        <img src="YOUTUBE IMAGES/magnifying-glass.svg" alt="" class="header-search-img">
+                        <p class="header-buttons-details">
+                            Search
+                        </p>
+                    </button>
+                </div>
+                <button class="header-buttons header-voice">
+                    <img src="YOUTUBE IMAGES/microphone.svg" alt="">
+                    <p class="header-buttons-details">
+                        Search with your voice
+                    </p>
+                </button>
+            </div>
+            <!-- DIREITA -->
+            <div class="header-direita">
+                <a href="WIP index.html" class="header-buttons header-upload">
+                    <img src="YOUTUBE IMAGES/upload.svg" alt="">
+                    <p class="header-buttons-details">
+                        Upload
+                    </p>
+                </a>
+                <!-- NOTIFICATIONS POPUP -->
+                <button class="header-buttons header-notif" onfocus="showNotifications()" onblur="showNotifications()">
+                    <img src="YOUTUBE IMAGES/bell.svg" alt="">
+                    <p class="header-buttons-details">
+                        Notifications
+                    </p>
+                    <!-- COLOCAR header-HIDE AQUI -->
+                    <div class="header-popup header-notifications header-HIDE" id="notificationsID">
+                        <section class="header-notif-1">
+                            <p>Notifications</p>
+                            <div class="header-buttons header-notif-settings">
+                                <img src="YOUTUBE IMAGES/settings.svg" alt="">
+                            </div>
+                        </section>
+                        <section class="header-notif-2">
+                            <!-- NOTIFICATIONS LIST -->
+                            <div class="header-notif-2-button">
+                                <div class="header-notif-2-real-button">
+                                    <div class="header-prof-notif-dot"></div>
+                                    <img src="YOUTUBE IMAGES/ProfilePics/LTT.jpg" alt="">
+                                    <div class="header-notif-title">
+                                        <p>Linus Tech Tips uploaded: This is the WORST Monitor Ever...ON PURPOSE!</p>
+                                        <p>2 hours ago</p>
+                                    </div>
+                                    <div class="header-notif-thumbnail thumbnail1"></div>
+                                    <div class="header-notif-3dots header-3dots-HIDE" onclick="showNotif3dots(this)" id="notifications3dotsID">
+                                        <img src="YOUTUBE IMAGES/small-menu.svg" alt="">
+                                    </div>
+                                    <div class="header-notif-3dots-popup">
+                                        <a class="header-notif-3dots-button">
+                                            <div class="header-notif-3dots-popup-button">
+                                                <img src="YOUTUBE IMAGES/hide.svg" alt="">
+                                                <p>Hide this notification</p>
+                                            </div>
+                                            <div class="header-notif-3dots-popup-button">
+                                                <img src="YOUTUBE IMAGES/bell-off.svg" alt="">
+                                                <p>Turn off all from Lives do alanzoka</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-notif-2-button">
+                                <div class="header-notif-2-real-button">
+                                    <div class="header-prof-notif-dot"></div>
+                                    <img src="YOUTUBE IMAGES/ProfilePics/tom scott.jpg" alt="">
+                                    <div class="header-notif-title">
+                                        <p>Tom Scott uploaded: The world's cleanest railway</p>
+                                        <p>2 hours ago</p>
+                                    </div>
+                                    <div class="header-notif-thumbnail thumbnail2"></div>
+                                    <div class="header-notif-3dots header-3dots-HIDE" onclick="showNotif3dots(this)" id="notifications3dotsID">
+                                        <img src="YOUTUBE IMAGES/small-menu.svg" alt="">
+                                    </div>
+                                    <div class="header-notif-3dots-popup">
+                                        <a class="header-notif-3dots-button">
+                                            <div class="header-notif-3dots-popup-button">
+                                                <img src="YOUTUBE IMAGES/hide.svg" alt="">
+                                                <p>Hide this notification</p>
+                                            </div>
+                                            <div class="header-notif-3dots-popup-button">
+                                                <img src="YOUTUBE IMAGES/bell-off.svg" alt="">
+                                                <p>Turn off all from Lives do alanzoka</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-notif-2-button">
+                                <div class="header-notif-2-real-button">
+                                    <div class="header-prof-notif-dot"></div>
+                                    <img src="YOUTUBE IMAGES/ProfilePics/kurzgesagt.jpg" alt="">
+                                    <div class="header-notif-title">
+                                        <p>Kurzgesagt - In a Nutshell uploaded: How a Nuclear War Will Start - Minute By Minute</p>
+                                        <p>3 hours ago</p>
+                                    </div>
+                                    <div class="header-notif-thumbnail thumbnail3"></div>
+                                    <div class="header-notif-3dots header-3dots-HIDE" onclick="showNotif3dots(this)" id="notifications3dotsID">
+                                        <img src="YOUTUBE IMAGES/small-menu.svg" alt="">
+                                    </div>
+                                    <div class="header-notif-3dots-popup">
+                                        <a class="header-notif-3dots-button">
+                                            <div class="header-notif-3dots-popup-button">
+                                                <img src="YOUTUBE IMAGES/hide.svg" alt="">
+                                                <p>Hide this notification</p>
+                                            </div>
+                                            <div class="header-notif-3dots-popup-button">
+                                                <img src="YOUTUBE IMAGES/bell-off.svg" alt="">
+                                                <p>Turn off all from Lives do alanzoka</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-notif-2-button">
+                                <div class="header-notif-2-real-button">
+                                    <div class="header-prof-notif-dot"></div>
+                                    <img src="YOUTUBE IMAGES/ProfilePics/corridor crew.jpg" alt="">
+                                    <div class="header-notif-title">
+                                        <p>Corridor Crew uploaded: VFX Artists React to Bad & Great CGI 113 (ft. Weta FX)</p>
+                                        <p>5 hours ago</p>
+                                    </div>
+                                    <div class="header-notif-thumbnail thumbnail4"></div>
+                                    <div class="header-notif-3dots header-3dots-HIDE" onclick="showNotif3dots(this)" id="notifications3dotsID">
+                                        <img src="YOUTUBE IMAGES/small-menu.svg" alt="">
+                                    </div>
+                                    <div class="header-notif-3dots-popup">
+                                        <a class="header-notif-3dots-button">
+                                            <div class="header-notif-3dots-popup-button">
+                                                <img src="YOUTUBE IMAGES/hide.svg" alt="">
+                                                <p>Hide this notification</p>
+                                            </div>
+                                            <div class="header-notif-3dots-popup-button">
+                                                <img src="YOUTUBE IMAGES/bell-off.svg" alt="">
+                                                <p>Turn off all from Lives do alanzoka</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-notif-2-button">
+                                <div class="header-notif-2-real-button">
+                                    <div class="header-prof-notif-dot"></div>
+                                    <img src="YOUTUBE IMAGES/ProfilePics/steve mould.jpg" alt="">
+                                    <div class="header-notif-title">
+                                        <p>Steve Mould uploaded: The object we thought was impossible</p>
+                                        <p>6 hours ago</p>
+                                    </div>
+                                    <div class="header-notif-thumbnail thumbnail5"></div>
+                                    <div class="header-notif-3dots header-3dots-HIDE" onclick="showNotif3dots(this)" id="notifications3dotsID">
+                                        <img src="YOUTUBE IMAGES/small-menu.svg" alt="">
+                                    </div>
+                                    <div class="header-notif-3dots-popup">
+                                        <a class="header-notif-3dots-button">
+                                            <div class="header-notif-3dots-popup-button">
+                                                <img src="YOUTUBE IMAGES/hide.svg" alt="">
+                                                <p>Hide this notification</p>
+                                            </div>
+                                            <div class="header-notif-3dots-popup-button">
+                                                <img src="YOUTUBE IMAGES/bell-off.svg" alt="">
+                                                <p>Turn off all from Lives do alanzoka</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-notif-2-button">
+                                <div class="header-notif-2-real-button">
+                                    <div class="header-prof-notif-dot"></div>
+                                    <img src="YOUTUBE IMAGES/ProfilePics/daily dose.jpg" alt="">
+                                    <div class="header-notif-title">
+                                        <p>Daily Dose of Internet uploaded: Lifeguards are Real Life NPCs</p>
+                                        <p>5 hours ago</p>
+                                    </div>
+                                    <div class="header-notif-thumbnail thumbnail6"></div>
+                                    <div class="header-notif-3dots header-3dots-HIDE" onclick="showNotif3dots(this)" id="notifications3dotsID">
+                                        <img src="YOUTUBE IMAGES/small-menu.svg" alt="">
+                                    </div>
+                                    <div class="header-notif-3dots-popup">
+                                        <a class="header-notif-3dots-button">
+                                            <div class="header-notif-3dots-popup-button">
+                                                <img src="YOUTUBE IMAGES/hide.svg" alt="">
+                                                <p>Hide this notification</p>
+                                            </div>
+                                            <div class="header-notif-3dots-popup-button">
+                                                <img src="YOUTUBE IMAGES/bell-off.svg" alt="">
+                                                <p>Turn off all from Lives do alanzoka</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-notif-2-button">
+                                <div class="header-notif-2-real-button">
+                                    <div class="header-prof-notif-dot"></div>
+                                    <img src="YOUTUBE IMAGES/ProfilePics/veritasium.jpg" alt="">
+                                    <div class="header-notif-title">
+                                        <p>Veritasium uploaded: How Imaginary Numbers Were Invented</p>
+                                        <p>8 hours ago</p>
+                                    </div>
+                                    <div class="header-notif-thumbnail thumbnail7"></div>
+                                    <div class="header-notif-3dots header-3dots-HIDE" onclick="showNotif3dots(this)" id="notifications3dotsID">
+                                        <img src="YOUTUBE IMAGES/small-menu.svg" alt="">
+                                    </div>
+                                    <div class="header-notif-3dots-popup">
+                                        <a class="header-notif-3dots-button">
+                                            <div class="header-notif-3dots-popup-button">
+                                                <img src="YOUTUBE IMAGES/hide.svg" alt="">
+                                                <p>Hide this notification</p>
+                                            </div>
+                                            <div class="header-notif-3dots-popup-button">
+                                                <img src="YOUTUBE IMAGES/bell-off.svg" alt="">
+                                                <p>Turn off all from Lives do alanzoka</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </button>
+                <button class="header-buttons header-prof" onfocus="showProfile()" onblur="showProfile()">
+                    <!-- PROFILE POPUP -->
+                    <div class="header-popup header-profile header-HIDE" id="profileID">
+                        <section class="header-profile-1">
+                            <div class="header-profile-1-pfp header-prof header-prof1"></div>
+                            <div class="header-profile-1-nickname">
+                                <p>aharp 0440</p>
+                                <p>@aharp-xr7qm</p>
+                                <a href="">Manage your Google Account</a>
+                            </div>
+                        </section>
+                        <section class="header-profile-2">
+                            <div class="header-profile-button">
+                                <img src="YOUTUBE IMAGES/person.svg" alt="">
+                                <div>
+                                    <p>Your channel</p>
+                                </div>
+                            </div>
+                            <div class="header-profile-button">
+                                <img src="YOUTUBE IMAGES/yt-studio.svg" alt="">
+                                <div>
+                                    <p>Youtube Studio</p>
+                                </div>
+                            </div>
+                            <div class="header-profile-button">
+                                <img src="YOUTUBE IMAGES/switch-account.svg" alt="">
+                                <div>
+                                    <p>Switch account</p>
+                                    <img src="YOUTUBE IMAGES/arrow-next.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="header-profile-button">
+                                <img src="YOUTUBE IMAGES/sign-in.svg" alt="">
+                                <div>
+                                    <p>Sign out</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="header-profile-2">
+                            <div class="header-profile-button">
+                                <img src="YOUTUBE IMAGES/coin.svg" alt="">
+                                <div>
+                                    <p>Purchases and memberships</p>
+                                </div>
+                            </div>
+                            <div class="header-profile-button">
+                                <img src="YOUTUBE IMAGES/security-user.svg" alt="">
+                                <div>
+                                    <p>Your data in YouTube</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="header-profile-2">
+                            <div class="header-profile-button">
+                                <img src="YOUTUBE IMAGES/moon.svg" alt="">
+                                <div>
+                                    <p>Appearence: Device Theme</p>
+                                    <img src="YOUTUBE IMAGES/arrow-next.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="header-profile-button">
+                                <img src="YOUTUBE IMAGES/language.svg" alt="">
+                                <div>
+                                    <p>Language: English</p>
+                                    <img src="YOUTUBE IMAGES/arrow-next.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="header-profile-button">
+                                <img src="YOUTUBE IMAGES/restricted-mode.svg" alt="">
+                                <div>
+                                    <p>Restricted Mode: Off</p>
+                                    <img src="YOUTUBE IMAGES/arrow-next.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="header-profile-button">
+                                <img src="YOUTUBE IMAGES/globe.svg" alt="">
+                                <div>
+                                    <p>Location: Brazil</p>
+                                    <img src="YOUTUBE IMAGES/arrow-next.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="header-profile-button">
+                                <img src="YOUTUBE IMAGES/keyboard.svg" alt="">
+                                <div>
+                                    <p>Keyboard</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="header-profile-2">
+                            <div class="header-profile-button">
+                                <img src="YOUTUBE IMAGES/settings.svg" alt="">
+                                <div>
+                                    <p>Settings</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="header-profile-2 header-profile-last">
+                            <div class="header-profile-button">
+                                <img src="YOUTUBE IMAGES/help.svg" alt="">
+                                <div>
+                                    <p>Help</p>
+                                </div>
+                            </div>
+                            <div class="header-profile-button">
+                                <img src="YOUTUBE IMAGES/feedback.svg" alt="">
+                                <div>
+                                    <p>Send feedback</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </button>
+            </div>
+        </div>
+        
+    </header>
+    
+    <!-- ===================== Main ===================== -->
+    <main>
+        <!-- ===================== Nav ===================== -->
+        <nav id="navID">
+            <section class="real-nav">
+                <div class="nav-short" id="navLeftID">
+                    <!-- Menu 1 -->
+                    <div class="nav-short-subclass">
+                        <a class="nav-buttons nav-highlighted-button" title="Home" href="">
+                            <img src="YOUTUBE IMAGES/home.svg" alt="">
+                            <p> Home </p>
+                        </a>
+                        <a class="nav-buttons" title="Shorts" href="">
+                            <img src="YOUTUBE IMAGES/shorts.svg" alt="">
+                            <p> Shorts </p>
+                        </a>
+                        <a class="nav-buttons" title="Subscriptions" href="">
+                            <img src="YOUTUBE IMAGES/subscriptions.svg" alt="">
+                            <p> Subscriptions </p>
+                        </a>
+                        <a class="nav-buttons" title="Library" href="">
+                            <img src="YOUTUBE IMAGES/library.svg" alt="">
+                            <p> Library </p>
+                        </a>
+                    </div>
+                    <!-- Menu 2 -->
+                    <div class="nav-short-subclass nav-HIDE-2" href="">
+                        <a class="nav-buttons" title="Library" href="">
+                            <img src="YOUTUBE IMAGES/library.svg" alt="">
+                            <p> Library </p>
+                        </a>
+                        <a class="nav-buttons" title="History" href="">
+                            <img src="YOUTUBE IMAGES/recents.svg" alt="">
+                            <p> History </p>
+                        </a>
+                        <a class="nav-buttons" title="Your videos" href="">
+                            <img src="YOUTUBE IMAGES/your-videos.svg" alt="">
+                            <p> Your videos </p>
+                        </a>
+                        <a class="nav-buttons" title="Watch later" href="">
+                            <img src="YOUTUBE IMAGES/watch-later.svg" alt="">
+                            <p> Watch later </p>
+                        </a>
+                        <a class="nav-buttons" title="Liked videos" href="">
+                            <img src="YOUTUBE IMAGES/like.svg" alt="">
+                            <p> Liked videos </p>
+                        </a>
+                    </div>
+                    <!-- Subscriptions -->
+                    <ul class="nav-short-subclass nav-HIDE-2 nav-subscriptions-compacted nav-subscriptions nav-mini-menu" id="navSubsID">
+                        <h3> Subscriptions</h3>
+                        <li>
+                            <a class="nav-buttons" title="Linus Tech Tips" href="">
+                                <img src="YOUTUBE IMAGES/ProfilePics/LTT.jpg" alt="">
+                                <p>Linus Tech Tips</p>
+                                <div class="nav-subscriptions-live"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-buttons" title="Canal Nostalgia" href="">
+                                <img src="YOUTUBE IMAGES/ProfilePics/canal castanhari.jpg" alt="">
+                                <p>Canal Nostalgia</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-buttons" title="Corridor" href="">
+                                <img src="YOUTUBE IMAGES/ProfilePics/corridor.jpg" alt="">
+                                <p>Corridor</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-buttons" title="Corridor Crew" href="">
+                                <img src="YOUTUBE IMAGES/ProfilePics/corridor crew.jpg" alt="">
+                                <p>Corridor Crew</p>
+                                <div class="nav-subscriptions-dot"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-buttons" title="Daily Dose of Internet" href="">
+                                <img src="YOUTUBE IMAGES/ProfilePics/daily dose.jpg" alt="">
+                                <p>Daily Dose of Internet</p>
+                                <div class="nav-subscriptions-dot"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-buttons" title="Envato Tuts+" href="">
+                                <img src="YOUTUBE IMAGES/ProfilePics/envato tuts.jpg" alt="">
+                                <p>Envato Tuts+</p>
+                                <div class="nav-subscriptions-dot"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-buttons" title="Kurzgesagt - In a Nutshell" href="">
+                                <img src="YOUTUBE IMAGES/ProfilePics/kurzgesagt.jpg" alt="">
+                                <p>Kurzgesagt - In a Nutshell</p>
+                            </a>
+                        </li>
+                        <li class="nav-subscriptions-showmore">
+                            <a class="nav-buttons" title="Show 11 more" onclick="showMore()">
+                                <img src="YOUTUBE IMAGES/arrow-next.svg" alt="">
+                                <p>Show 11 more</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-buttons" title="Manual do Mundo" href="">
+                                <img src="YOUTUBE IMAGES/ProfilePics/manual do mundo.jpg" alt="">
+                                <p>Manual do Mundo</p>
+                                <div class="nav-subscriptions-dot"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-buttons" title="Minute Earth" href="">
+                                <img src="YOUTUBE IMAGES/ProfilePics/minute earth.jpg" alt="">
+                                <p>Minute Earth</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-buttons" title="Minute Physics" href="">
+                                <img src="YOUTUBE IMAGES/ProfilePics/minute physics.jpg" alt="">
+                                <p>Minute Physics</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-buttons" title="NileRed Shorts" href="">
+                                <img src="YOUTUBE IMAGES/ProfilePics/nile red.jpg" alt="">
+                                <p>NileRed Shorts</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-buttons" title="SmarterEveryDay" href="">
+                                <img src="YOUTUBE IMAGES/ProfilePics/smarter every day.jpg" alt="">
+                                <p>SmarterEveryDay</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-buttons" title="Steve Mould" href="">
+                                <img src="YOUTUBE IMAGES/ProfilePics/steve mould.jpg" alt="">
+                                <p>Steve Mould</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-buttons" title="Tom Scott" href="">
+                                <img src="YOUTUBE IMAGES/ProfilePics/tom scott.jpg" alt="">
+                                <p>Tom Scott</p>
+                                <div class="nav-subscriptions-dot"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-buttons" title="Veritasium" href="">
+                                <img src="YOUTUBE IMAGES/ProfilePics/veritasium.jpg" alt="">
+                                <p>Veritasium</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-buttons" title="VSauce" href="">
+                                <img src="YOUTUBE IMAGES/ProfilePics/vsauce.jpg" alt="">
+                                <p>VSauce</p>
+                                <div class="nav-subscriptions-dot"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-buttons" title="Zach King" href="">
+                                <img src="YOUTUBE IMAGES/ProfilePics/zach king.jpg" alt="">
+                                <p>Zach King</p>
+                                <div class="nav-subscriptions-dot"></div>
+                            </a>
+                        </li>
+                        <li class="nav-subscriptions-browse nav-subscriptions-showless">
+                            <a class="nav-buttons" title="Browse Channels" href="">
+                                <img src="YOUTUBE IMAGES/plus.svg" alt="">
+                                <p>Browse channels</p>
+                            </a>
+                        </li>
+                        <li class="nav-subscriptions-showless">
+                            <a class="nav-buttons" title="Show less" onclick="showMore()">
+                                <img src="YOUTUBE IMAGES/arrow-next.svg" alt="">
+                                <p>Show less</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Explore -->
+                    <div class="nav-short-subclass nav-HIDE-2 nav-mini-menu">
+                        <h3>Explore</h3>
+                        <a class="nav-buttons" title="Trending" href="">
+                            <img src="YOUTUBE IMAGES/trending.svg" alt="">
+                            <p>Trending</p>
+                        </a>
+                        <a class="nav-buttons" title="Music" href="">
+                            <img src="YOUTUBE IMAGES/music.svg" alt="">
+                            <p>Music</p>
+                        </a>
+                        <a class="nav-buttons" title="Movies" href="">
+                            <img src="YOUTUBE IMAGES/movies.svg" alt="">
+                            <p>Movies</p>
+                        </a>
+                        <a class="nav-buttons" title="Live" href="">
+                            <img src="YOUTUBE IMAGES/live.svg" alt="">
+                            <p>Live</p>
+                        </a>
+                        <a class="nav-buttons" title="Gaming" href="">
+                            <img src="YOUTUBE IMAGES/gaming.svg" alt="">
+                            <p>Gaming</p>
+                        </a>
+                        <a class="nav-buttons" title="News" href="">
+                            <img src="YOUTUBE IMAGES/news.svg" alt="">
+                            <p>News</p>
+                        </a>
+                        <a class="nav-buttons" title="Sports" href="">
+                            <img src="YOUTUBE IMAGES/trophy.svg" alt="">
+                            <p>Sports</p>
+                        </a>
+                        <a class="nav-buttons" title="Learning" href="">
+                            <img src="YOUTUBE IMAGES/lamp.svg" alt="">
+                            <p>Learning</p>
+                        </a>
+                    </div>
+                    <!-- More from Youtube -->
+                    <div class="nav-short-subclass nav-HIDE-2 nav-mini-menu nav-more">
+                        <h3>More from YouTube</h3>
+                        <a class="nav-buttons" title="YouTube Premium" href="">
+                            <img src="YOUTUBE IMAGES/yt-logo.svg" alt="">
+                            <p>YouTube Premium</p>
+                        </a>
+                        <a class="nav-buttons" title="YouTube Studio" href="">
+                            <img src="YOUTUBE IMAGES/yt-studio-2.svg" alt="">
+                            <p>YouTube Studio</p>
+                        </a>
+                        <a class="nav-buttons" title="YouTube Music" href="">
+                            <img src="YOUTUBE IMAGES/yt-music.svg" alt="">
+                            <p>YouTube Music</p>
+                        </a>
+                        <a class="nav-buttons" title="YouTube Kids" href="">
+                            <img src="YOUTUBE IMAGES/yt-kids.svg" alt="">
+                            <p>YouTube Kids</p>
+                        </a>
+                    </div>
+                    <!-- Menu 3 -->
+                    <div class="nav-short-subclass nav-HIDE-2">
+                        <a class="nav-buttons" title="Settings" href="">
+                            <img src="YOUTUBE IMAGES/settings.svg" alt="">
+                            <p>Settings</p>
+                        </a>
+                        <a class="nav-buttons" title="Report history" href="">
+                            <img src="YOUTUBE IMAGES/flag.svg" alt="">
+                            <p>Report history</p>
+                        </a>
+                        <a class="nav-buttons" title="Help" href="">
+                            <img src="YOUTUBE IMAGES/help.svg" alt="">
+                            <p>Help</p>
+                        </a>
+                        <a class="nav-buttons" title="Send feedback" href="">
+                            <img src="YOUTUBE IMAGES/feedback.svg" alt="">
+                            <p>Send feedback</p>
+                        </a>
+                    </div>
+                    <!-- Footer -->
+                    <footer class="nav-footer nav-HIDE-2">
+                        <div>
+                            <a href="">About</a>
+                            <a href="">Press</a>
+                            <a href="">Copyright</a>
+                            <a href="">Contact us</a>
+                            <a href="">Creators</a>
+                            <a href="">Advertise</a>
+                            <a href="">Developers</a>
+                        </div>
+                        <div>
+                            <a href="">Terms</a>
+                            <a href="">Privacy</a>
+                            <a href="">Policy & Safety</a>
+                            <a href="">How YouTube works</a>
+                            <a href="">Test new features</a>
+                        </div>
+                        <p>&copy 2023 Google LLC</p>
+                    </footer>
+                </div>
+            </section>
+        
+            <!-- ===================== Topics ===================== -->
+            <section class="topics" id="topicsRootID">
+                <div class="topics-sidebar" id="sideBarID">
+                    <div class="topics-sidebar-wings topics-HIDE" id="topics-LArrow">
+                        <div class="topics-sidebar-block"></div>
+                        <div class="topics-sidebar-degrade"></div>
+                        <div class="topics-sidebar-arrow">
+                            <div class="header-buttons" onclick="arrowClick.left.call(arrowClick)">
+                                <img src="YOUTUBE IMAGES/arrow-next.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="topics-sidebar-wings topics-sidebar-wings2" id="topics-RArrow">
+                        <div class="topics-sidebar-degrade topics-sidebar-degrade2"></div>
+                        <div class="topics-sidebar-block topics-sidebar-block2"></div>
+                        <div class="topics-sidebar-arrow topics-sidebar-arrow2">
+                            <div class="header-buttons" onclick="arrowClick.right.call(arrowClick)">
+                                <img src="YOUTUBE IMAGES/arrow-next.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="topics-list" id="topicsID">
+                    <div class="topics-buttons"style="background-color:var(--true-white);">
+                        <p style="color:var(--black)">All</p>
+                    </div>
+                    <div class="topics-buttons">
+                        <p>HTML</p>
+                    </div>
+                    <div class="topics-buttons">
+                        <p>CSS</p>
+                    </div>
+                    <div class="topics-buttons">
+                        <p>Escape from Tarkov</p>
+                    </div>
+                    <div class="topics-buttons">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+            </section>
+        </nav>
+        
+        <!-- ===================== Front Page ===================== -->
+        <div class="front" id="frontID">
+            <div class="front-2">
+                <!-- FRONT PAGE CARDS -->
+                <ul class="front-page-list">
+                    <li class="front-page-card">
+                        <div class="card-thumbnail thumbnail1">
+                            <p class="card-thumbnail-time">5:24</p>
+                            <div class="card-thumbnail-extra">
+                                <img src="YOUTUBE IMAGES/mute.svg" alt="">
+                                <p class="card-thumbnail-unmute">Unmute</p>
+                                <div class="card-thumbnail-extra-bar"></div>
+                                <img src="YOUTUBE IMAGES/subtitles.svg" alt="">
+                                <p class="card-thumbnail-subtitles">Subtitles/closed captions</p>
+                            </div>
+                            <div class="card-thumbnail-watch-time"></div>
+                        </div>
+                        <div class="card-info">
+                            <a href="" class="card-pfp">
+                                <img title="Linus Tech Tips" src="YOUTUBE IMAGES/ProfilePics/LTT.jpg" alt="">
+                            </a>
+                            <div class="card-text">
+                                <h6 class="card-title" title="The God of Computer Fans">The God of Computer Fans</h6>
+                                <a href="WIP index.html" class="card-channel">
+                                    <p class="card-channel-name">Linus Tech Tips</p>
+                                    <p class="card-channel-details">Linus Tech Tips</p>
+                                    <div class="card-channel-verified">
+                                        <img src="YOUTUBE IMAGES/verified.svg" alt="">
+                                        <p class="card-channel-details">Verified</p>
+                                    </div>
+                                </a>
+                                <p class="card-posted">4.5M views • 11 months ago</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="front-page-card">
+                        <div class="card-thumbnail thumbnail2">
+                            <p class="card-thumbnail-time">5:29</p>
+                            <div class="card-thumbnail-extra">
+                                <img src="YOUTUBE IMAGES/mute.svg" alt="">
+                                <p class="card-thumbnail-unmute">Unmute</p>
+                                <div class="card-thumbnail-extra-bar"></div>
+                                <img src="YOUTUBE IMAGES/subtitles.svg" alt="">
+                                <p class="card-thumbnail-subtitles">Subtitles/closed captions</p>
+                            </div>
+                            <div class="card-thumbnail-watch-time"></div>
+                        </div>
+                        <div class="card-info">
+                            <a href="" class="card-pfp">
+                                <img title="Tom Scott" src="YOUTUBE IMAGES/ProfilePics/tom scott.jpg" alt="">
+                            </a>
+                            <div class="card-text">
+                                <h6 class="card-title" title="I rode a giant mechanical elephant. You can too.">I rode a giant mechanical elephant. You can too.</h6>
+                                <a href="WIP index.html" class="card-channel">
+                                    <p class="card-channel-name">Tom Scott</p>
+                                    <p class="card-channel-details">Tom Scott</p>
+                                    <div class="card-channel-verified">
+                                        <img src="YOUTUBE IMAGES/verified.svg" alt="">
+                                        <p class="card-channel-details">Verified</p>
+                                    </div>
+                                </a>
+                                <p class="card-posted">1M views • 1 year ago</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="front-page-card">
+                        <div class="card-thumbnail thumbnail3">
+                            <p class="card-thumbnail-time">10:53</p>
+                            <div class="card-thumbnail-extra">
+                                <img src="YOUTUBE IMAGES/mute.svg" alt="">
+                                <p class="card-thumbnail-unmute">Unmute</p>
+                                <div class="card-thumbnail-extra-bar"></div>
+                                <img src="YOUTUBE IMAGES/subtitles.svg" alt="">
+                                <p class="card-thumbnail-subtitles">Subtitles/closed captions</p>
+                            </div>
+                            <div class="card-thumbnail-watch-time"></div>
+                        </div>
+                        <div class="card-info">
+                            <a href="" class="card-pfp">
+                                <img title="Kurzgesagt - In a Nutshell" src="YOUTUBE IMAGES/ProfilePics/kurzgesagt.jpg" alt="">
+                            </a>
+                            <div class="card-text">
+                                <h6 class="card-title" title="What Happens If You Destroy A Black Hole?">What Happens If You Destroy A Black Hole?</h6>
+                                <a href="WIP index.html" class="card-channel">
+                                    <p class="card-channel-name">Kurzgesagt - In a Nutshell</p>
+                                    <p class="card-channel-details">Kurzgesagt - In a Nutshell</p>
+                                    <div class="card-channel-verified">
+                                        <img src="YOUTUBE IMAGES/verified.svg" alt="">
+                                        <p class="card-channel-details">Verified</p>
+                                    </div>
+                                </a>
+                                <p class="card-posted">5.2M views • 3 weeks ago</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="front-page-card">
+                        <div class="card-thumbnail thumbnail4">
+                            <p class="card-thumbnail-time">11:22</p>
+                            <div class="card-thumbnail-extra">
+                                <img src="YOUTUBE IMAGES/mute.svg" alt="">
+                                <p class="card-thumbnail-unmute">Unmute</p>
+                                <div class="card-thumbnail-extra-bar"></div>
+                                <img src="YOUTUBE IMAGES/subtitles.svg" alt="">
+                                <p class="card-thumbnail-subtitles">Subtitles/closed captions</p>
+                            </div>
+                            <div class="card-thumbnail-watch-time"></div>
+                        </div>
+                        <div class="card-info">
+                            <a href="" class="card-pfp">
+                                <img title="Veritasium" src="YOUTUBE IMAGES/ProfilePics/veritasium.jpg" alt="">
+                            </a>
+                            <div class="card-text">
+                                <h6 class="card-title" title="Most People Don't Know How Bikes Work">Most People Don't Know How Bikes Work</h6>
+                                <a href="WIP index.html" class="card-channel">
+                                    <p class="card-channel-name">Veritasium</p>
+                                    <p class="card-channel-details">Veritasium</p>
+                                    <div class="card-channel-verified">
+                                        <img src="YOUTUBE IMAGES/verified.svg" alt="">
+                                        <p class="card-channel-details">Verified</p>
+                                    </div>
+                                </a>
+                                <p class="card-posted">20M views • 1 year ago</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="front-page-card">
+                        <div class="card-thumbnail thumbnail5">
+                            <p class="card-thumbnail-time">5:00</p>
+                            <div class="card-thumbnail-extra">
+                                <img src="YOUTUBE IMAGES/mute.svg" alt="">
+                                <p class="card-thumbnail-unmute">Unmute</p>
+                                <div class="card-thumbnail-extra-bar"></div>
+                                <img src="YOUTUBE IMAGES/subtitles.svg" alt="">
+                                <p class="card-thumbnail-subtitles">Subtitles/closed captions</p>
+                            </div>
+                            <div class="card-thumbnail-watch-time"></div>
+                        </div>
+                        <div class="card-info">
+                            <a href="" class="card-pfp">
+                                <img title="Corridor" src="YOUTUBE IMAGES/ProfilePics/corridor.jpg" alt="">
+                            </a>
+                            <div class="card-text">
+                                <h6 class="card-title" title="To The DEATH">To The DEATH</h6>
+                                <a href="WIP index.html" class="card-channel">
+                                    <p class="card-channel-name">Corridor</p>
+                                    <p class="card-channel-details">Corridor</p>
+                                    <div class="card-channel-verified">
+                                        <img src="YOUTUBE IMAGES/verified.svg" alt="">
+                                        <p class="card-channel-details">Verified</p>
+                                    </div>
+                                </a>
+                                <p class="card-posted">9.6M views • 1 year ago</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="front-page-card">
+                        <div class="card-thumbnail thumbnail6">
+                            <p class="card-thumbnail-time">15:54</p>
+                            <div class="card-thumbnail-extra">
+                                <img src="YOUTUBE IMAGES/mute.svg" alt="">
+                                <p class="card-thumbnail-unmute">Unmute</p>
+                                <div class="card-thumbnail-extra-bar"></div>
+                                <img src="YOUTUBE IMAGES/subtitles.svg" alt="">
+                                <p class="card-thumbnail-subtitles">Subtitles/closed captions</p>
+                            </div>
+                            <div class="card-thumbnail-watch-time"></div>
+                        </div>
+                        <div class="card-info">
+                            <a href="" class="card-pfp">
+                                <img title="VSauce" src="YOUTUBE IMAGES/ProfilePics/vsauce.jpg" alt="">
+                            </a>
+                            <div class="card-text">
+                                <h6 class="card-title" title="How Big Can a Person Get?">How Big Can a Person Get?</h6>
+                                <a href="WIP index.html" class="card-channel">
+                                    <p class="card-channel-name">VSauce</p>
+                                    <p class="card-channel-details">VSauce</p>
+                                    <div class="card-channel-verified">
+                                        <img src="YOUTUBE IMAGES/verified.svg" alt="">
+                                        <p class="card-channel-details">Verified</p>
+                                    </div>
+                                </a>
+                                <p class="card-posted">19M views • 10 year ago</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="front-page-card">
+                        <div class="card-thumbnail thumbnail7">
+                            <p class="card-thumbnail-time">18:05</p>
+                            <div class="card-thumbnail-extra">
+                                <img src="YOUTUBE IMAGES/mute.svg" alt="">
+                                <p class="card-thumbnail-unmute">Unmute</p>
+                                <div class="card-thumbnail-extra-bar"></div>
+                                <img src="YOUTUBE IMAGES/subtitles.svg" alt="">
+                                <p class="card-thumbnail-subtitles">Subtitles/closed captions</p>
+                            </div>
+                            <div class="card-thumbnail-watch-time"></div>
+                        </div>
+                        <div class="card-info">
+                            <a href="" class="card-pfp">
+                                <img title="Corridor Crew" src="YOUTUBE IMAGES/ProfilePics/corridor crew.jpg" alt="">
+                            </a>
+                            <div class="card-text">
+                                <h6 class="card-title" title="VFX Artists React to Bad & Great CGI 114 (ft. Todd Vaziri)">VFX Artists React to Bad & Great CGI 114 (ft. Todd Vaziri)</h6>
+                                <a href="WIP index.html" class="card-channel">
+                                    <p class="card-channel-name">Corridor Crew</p>
+                                    <p class="card-channel-details">Corridor Crew</p>
+                                    <div class="card-channel-verified">
+                                        <img src="YOUTUBE IMAGES/verified.svg" alt="">
+                                        <p class="card-channel-details">Verified</p>
+                                    </div>
+                                </a>
+                                <p class="card-posted">707K views • 4 days ago</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="front-page-card">
+                        <div class="card-thumbnail thumbnail8">
+                            <p class="card-thumbnail-time">35:28</p>
+                            <div class="card-thumbnail-extra">
+                                <img src="YOUTUBE IMAGES/mute.svg" alt="">
+                                <p class="card-thumbnail-unmute">Unmute</p>
+                                <div class="card-thumbnail-extra-bar"></div>
+                                <img src="YOUTUBE IMAGES/subtitles.svg" alt="">
+                                <p class="card-thumbnail-subtitles">Subtitles/closed captions</p>
+                            </div>
+                            <div class="card-thumbnail-watch-time"></div>
+                        </div>
+                        <div class="card-info">
+                            <a href="" class="card-pfp">
+                                <img title="Smarter Every Day" src="YOUTUBE IMAGES/ProfilePics/smarter every day.jpg" alt="">
+                            </a>
+                            <div class="card-text">
+                                <h6 class="card-title" title="Bullets HITTING Bullets in Slow Motion - THE IMPOSSIBLE SHOT - Smarter Every Day 287">Bullets HITTING Bullets in Slow Motion - THE IMPOSSIBLE SHOT - Smarter Every Day 287</h6>
+                                <a href="WIP index.html" class="card-channel">
+                                    <p class="card-channel-name">Smarter Every Day</p>
+                                    <p class="card-channel-details">Smarter Every Day</p>
+                                    <div class="card-channel-verified">
+                                        <img src="YOUTUBE IMAGES/verified.svg" alt="">
+                                        <p class="card-channel-details">Verified</p>
+                                    </div>
+                                </a>
+                                <p class="card-posted">18M views • 3 months ago</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="front-page-card">
+                        <div class="card-thumbnail thumbnail9">
+                            <p class="card-thumbnail-time">6:58</p>
+                            <div class="card-thumbnail-extra">
+                                <img src="YOUTUBE IMAGES/mute.svg" alt="">
+                                <p class="card-thumbnail-unmute">Unmute</p>
+                                <div class="card-thumbnail-extra-bar"></div>
+                                <img src="YOUTUBE IMAGES/subtitles.svg" alt="">
+                                <p class="card-thumbnail-subtitles">Subtitles/closed captions</p>
+                            </div>
+                            <div class="card-thumbnail-watch-time"></div>
+                        </div>
+                        <div class="card-info">
+                            <a href="" class="card-pfp">
+                                <img title="Zack King" src="YOUTUBE IMAGES/ProfilePics/zach king.jpg" alt="">
+                            </a>
+                            <div class="card-text">
+                                <h6 class="card-title" title="Revealing my Top 10 Craziest Stunts">Revealing my Top 10 Craziest Stunts</h6>
+                                <a href="WIP index.html" class="card-channel">
+                                    <p class="card-channel-name">Zack King</p>
+                                    <p class="card-channel-details">Zack King</p>
+                                    <div class="card-channel-verified">
+                                        <img src="YOUTUBE IMAGES/verified.svg" alt="">
+                                        <p class="card-channel-details">Verified</p>
+                                    </div>
+                                </a>
+                                <p class="card-posted">5.5M views • 7 months ago</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="front-page-card">
+                        <div class="card-thumbnail thumbnail10">
+                            <p class="card-thumbnail-time">1:20:44</p>
+                            <div class="card-thumbnail-extra">
+                                <img src="YOUTUBE IMAGES/mute.svg" alt="">
+                                <p class="card-thumbnail-unmute">Unmute</p>
+                                <div class="card-thumbnail-extra-bar"></div>
+                                <img src="YOUTUBE IMAGES/subtitles.svg" alt="">
+                                <p class="card-thumbnail-subtitles">Subtitles/closed captions</p>
+                            </div>
+                            <div class="card-thumbnail-watch-time"></div>
+                        </div>
+                        <div class="card-info">
+                            <a href="" class="card-pfp">
+                                <img title="Canal Nostalgia" src="YOUTUBE IMAGES/ProfilePics/canal castanhari.jpg" alt="">
+                            </a>
+                            <div class="card-text">
+                                <h6 class="card-title" title="LEONARDO DA VINCI - O HOMEM QUE INVENTOU O FUTURO - Doc Nostalgia">LEONARDO DA VINCI - O HOMEM QUE INVENTOU O FUTURO - Doc Nostalgia</h6>
+                                <a href="WIP index.html" class="card-channel">
+                                    <p class="card-channel-name">Canal Nostalgia</p>
+                                    <p class="card-channel-details">Canal Nostalgia</p>
+                                    <div class="card-channel-verified">
+                                        <img src="YOUTUBE IMAGES/verified.svg" alt="">
+                                        <p class="card-channel-details">Verified</p>
+                                    </div>
+                                </a>
+                                <p class="card-posted">5.2M views • 6 months ago</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="front-page-card">
+                        <div class="card-thumbnail thumbnail11">
+                            <p class="card-thumbnail-time">7:51:46</p>
+                            <div class="card-thumbnail-extra">
+                                <img src="YOUTUBE IMAGES/mute.svg" alt="">
+                                <p class="card-thumbnail-unmute">Unmute</p>
+                                <div class="card-thumbnail-extra-bar"></div>
+                                <img src="YOUTUBE IMAGES/subtitles.svg" alt="">
+                                <p class="card-thumbnail-subtitles">Subtitles/closed captions</p>
+                            </div>
+                            <div class="card-thumbnail-watch-time"></div>
+                        </div>
+                        <div class="card-info">
+                            <a href="" class="card-pfp">
+                                <img title="Envato Tuts+" src="YOUTUBE IMAGES/ProfilePics/envato tuts.jpg" alt="">
+                            </a>
+                            <div class="card-text">
+                                <h6 class="card-title" title="HTML & CSS for Beginners | FREE MEGA COURSE (7+ Hours!)">HTML & CSS for Beginners | FREE MEGA COURSE (7+ Hours!)</h6>
+                                <a href="WIP index.html" class="card-channel">
+                                    <p class="card-channel-name">Envato Tuts+</p>
+                                    <p class="card-channel-details">Envato Tuts+</p>
+                                    <div class="card-channel-verified">
+                                        <img src="YOUTUBE IMAGES/verified.svg" alt="">
+                                        <p class="card-channel-details">Verified</p>
+                                    </div>
+                                </a>
+                                <p class="card-posted">829K views • 1 year ago</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="front-page-card">
+                        <div class="card-thumbnail thumbnail12">
+                            <p class="card-thumbnail-time">2:42</p>
+                            <div class="card-thumbnail-extra">
+                                <img src="YOUTUBE IMAGES/mute.svg" alt="">
+                                <p class="card-thumbnail-unmute">Unmute</p>
+                                <div class="card-thumbnail-extra-bar"></div>
+                                <img src="YOUTUBE IMAGES/subtitles.svg" alt="">
+                                <p class="card-thumbnail-subtitles">Subtitles/closed captions</p>
+                            </div>
+                            <div class="card-thumbnail-watch-time"></div>
+                        </div>
+                        <div class="card-info">
+                            <a href="" class="card-pfp">
+                                <img title="Daily Dose Of Internet" src="YOUTUBE IMAGES/ProfilePics/daily dose.jpg" alt="">
+                            </a>
+                            <div class="card-text">
+                                <h6 class="card-title" title="Her Bag Fell Out Mid-Flight">Her Bag Fell Out Mid-Flight</h6>
+                                <a href="WIP index.html" class="card-channel">
+                                    <p class="card-channel-name">Daily Dose Of Internet</p>
+                                    <p class="card-channel-details">Daily Dose Of Internet</p>
+                                    <div class="card-channel-verified">
+                                        <img src="YOUTUBE IMAGES/verified.svg" alt="">
+                                        <p class="card-channel-details">Verified</p>
+                                    </div>
+                                </a>
+                                <p class="card-posted">3.9M views • 4 days ago</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </main>
+    
+    <script src="Youtube script.js"> </script>
+    
+</body>
+
+</html>

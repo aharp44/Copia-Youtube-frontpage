@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button {
+            height: 100px;
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .sla{
+            background-color:red;
+            width:200px;
+            height:200px;
+            padding:10px;
+            /* display:inline; */
+            /* white-space: pre-wrap; */
+            /* display: flex; */
+        }
+
+        .sla a{
+            color:white;
+            background-color:blue;
+            padding:10px;
+            width:70px;
+            height:70px;
+            box-sizing: border-box;
+            /* display:inline; */
+            margin:5px;
+            display: inline-block;
+        }
+
+        .IRMAO + a{
+            background-color:green;
+        }
+
+        .aaa{
+            background-color:coral;
+            width: 30px;
+            height:10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <a onclick="showNotifications3dots()"> BOTAO
+        <button onclick="showNotifications3dots()">
+            AAA
+            <p>SLA</p>
+            <div class="aaa"></div>
+        </button>
+    </a>
+    <div class="sla" onclick="showNotifications3dots()">
+        <a class="IRMAO">aa</a>
+        <a href="">bb</a>
+        <a href="">cc</a>
+    </div>
+
+
+
+    <script>
+        
+        function showNotifications3dots(){
+            console.log("AAA");
+        }
+
+
+    </script>
+</body>
+
+</html>

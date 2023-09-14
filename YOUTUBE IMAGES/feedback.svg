@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
+<desc>Created with Fabric.js 5.2.4</desc>
+<defs>
+</defs>
+<g transform="matrix(1 0 0 1 540 540)" id="7875ede7-6247-44a3-b701-6decb4005b0c"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;" vector-effect="non-scaling-stroke"  x="-540" y="-540" rx="0" ry="0" width="1080" height="1080" />
+</g>
+<g transform="matrix(1 0 0 1 540 540)" id="8abb79bc-00b0-4ed7-b354-97ff648dc2d3"  >
+</g>
+<g transform="matrix(-51.2 0 0 51.77 540 540)" id="de766f71-0a72-40bd-9b09-dd52cfa3ea80"  >
+<path style="stroke: rgb(0,0,0); stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-12, -12)" d="M 19 2 L 5 2 C 3.3431457505076194 2 2 3.3431457505076194 2 5 L 2 15 C 2 16.65685424949238 3.3431457505076194 18 5 18 L 16.59 18 L 20.29 21.71 C 20.478718830804695 21.897186514407906 20.73419701534997 22.001536758799638 21 22 C 21.131176532820923 22.003380108382174 21.261320617111064 21.975981353794776 21.38 21.92 C 21.75342550710858 21.766596401679358 21.997984854826107 21.403701885711417 22 21 L 22 5 C 22 3.3431457505076194 20.65685424949238 2 19 2 Z M 20 18.59 L 17.71 16.29 C 17.521281169195305 16.102813485592094 17.26580298465003 15.99846324120036 17 16 L 5 16 C 4.447715250169207 16 4 15.552284749830793 4 15 L 4 5 C 4 4.447715250169207 4.447715250169207 4 5 4 L 19 4 C 19.552284749830793 4 20 4.447715250169207 20 5 Z M 12 12 C 11.447715250169207 12 11 12.447715250169207 11 13 C 11 13.552284749830793 11.447715250169207 14 12 14 C 12.552284749830793 14 13 13.552284749830793 13 13 C 13 12.447715250169207 12.552284749830793 12 12 12 Z M 12 6 C 11.447715250169207 6 11 6.447715250169207 11 7 L 11 10 C 11 10.552284749830793 11.447715250169207 11 12 11 C 12.552284749830793 11 13 10.552284749830793 13 10 L 13 7 C 13 6.447715250169207 12.552284749830793 6 12 6 Z" stroke-linecap="round" />
+</g>
+</svg>

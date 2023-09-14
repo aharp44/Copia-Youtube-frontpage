@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
+<desc>Created with Fabric.js 5.2.4</desc>
+<defs>
+</defs>
+<g transform="matrix(1 0 0 1 540 540)" id="fd2ed431-83fa-46a3-a635-233f7678727f"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;" vector-effect="non-scaling-stroke"  x="-540" y="-540" rx="0" ry="0" width="1080" height="1080" />
+</g>
+<g transform="matrix(1 0 0 1 540 540)" id="834468e2-e037-416c-a47f-d74b31cfc384"  >
+</g>
+<g transform="matrix(1.19 -0.29 0.29 1.19 540 540)"  >
+<g style="" vector-effect="non-scaling-stroke"   >
+		<g transform="matrix(50 0 0 50 0 0)"  >
+<path style="stroke: rgb(0,0,0); stroke-width: 0.6; fill: rgb(255,0,0);" transform=" translate(-8, -8)" d="M 14.712 4.633 C 14.54900461920426 4.031707317625256 14.079292682374744 3.56199538079574 13.478 3.399 C 12.382 3.11 8 3.11 8 3.11 C 8 3.11 3.6180000000000003 3.11 2.5220000000000002 3.399 C 1.9220000000000002 3.56 1.4500000000000002 4.033 1.2880000000000003 4.633 C 1 5.728 1 8 1 8 C 1 8 1 10.283 1.288 11.367 C 1.45 11.967 1.923 12.440000000000001 2.5220000000000002 12.601 C 3.618 12.89 8 12.89 8 12.89 C 8 12.89 12.382 12.89 13.478 12.601 C 14.079292682374744 12.43800461920426 14.54900461920426 11.968292682374745 14.712 11.367 C 15 10.272 15 8 15 8 C 15 8 15 5.728 14.712 4.633 z" />
+</g>
+		<g transform="matrix(50 0 0 50 20.75 0.3)"  >
+<path style="stroke: rgb(0,0,0); stroke-width: 0.6; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" translate(-8.41, -8.01)" d="M 6.593 10.11 L 10.237 8.012 L 6.593 5.902000000000001 L 6.593 10.110000000000001 z" stroke-linecap="round" stroke="##00ffae" />
+</g>
+</g>
+</g>
+</svg>
